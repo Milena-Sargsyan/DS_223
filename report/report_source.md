@@ -10,22 +10,22 @@ Market Context: The historical data captures the "Golden Age" and eventual satur
 
 3. Historical Data Source
 The analysis uses a time series of global film camera shipments from 1977 to 2007.
-Source: CIPA (Camera & Imaging Products Association).
-Scope: Global shipments by Japanese manufacturers (representing the vast majority of the global market at the time).
+- Source: CIPA (Camera & Imaging Products Association).
+- Scope: Global shipments by Japanese manufacturers (representing the vast majority of the global market at the time).
 
 4. Bass Model Parameter Estimation
 Using the CIPA historical data, I estimated the following parameters for the Bass Diffusion Model:
-$p$ (Coefficient of Innovation): 0.010203 This low value suggests that "innovators" (those who buy the product regardless of social influence) are a small portion of the market.
-$q$ (Coefficient of Imitation): 0.162198 This significantly higher value indicates that the film camera market is heavily driven by word-of-mouth, social trends, and "imitation" effects.
-$M$ (Market Potential): 707,311 (in units of 1,000).This aligns with the historical peak and eventual saturation of the analog market before the digital transition.
+- $p$ (Coefficient of Innovation): 0.010203 This low value suggests that "innovators" (those who buy the product regardless of social influence) are a small portion of the market.
+- $q$ (Coefficient of Imitation): 0.162198 This significantly higher value indicates that the film camera market is heavily driven by word-of-mouth, social trends, and "imitation" effects.
+- $M$ (Market Potential): 707,311 (in units of 1,000).This aligns with the historical peak and eventual saturation of the analog market before the digital transition.
 
 5. Predictive Strategy (Fermi Logic & Scope)
 Scope: Global Scope. The Pentax 17 is marketed to a worldwide audience of film enthusiasts and distributed internationally.
 Fermi Logic for Market Potential ($M_{pentax}$): To determine a realistic market potential for a niche revival product in 2025:
-1. Estimated active global film enthusiast community: 15–20 million.
-2. Assumed target market share for a brand-new, reliable point-and-shoot: 25%.
-3. Calculation: $20,000,000 \times 0.25 = 5,000,000$ potential adopters.
-4. Final Model $M$: 5,000 (as data is handled in units of 1,000s).
+- Estimated active global film enthusiast community: 15–20 million.
+- Assumed target market share for a brand-new, reliable point-and-shoot: 25%.
+- Calculation: $20,000,000 \times 0.25 = 5,000,000$ potential adopters.
+- Final Model $M$: 5,000 (as data is handled in units of 1,000s).
 
 6. Diffusion Prediction for Pentax 17
 Based on the Bass Model simulation:
