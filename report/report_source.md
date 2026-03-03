@@ -35,10 +35,10 @@ Based on the Bass Model simulation:
 
 7. Estimated Adopters by Period
 
-YearAnnual | Adopters (1000s) | Total Adopters (1000s)
-1       |        51.02        |      51.02
-5       |       87.52         |     341.42
-10      |        153.48       |      969.84
-15      |        216.54       |      1938.19
-18      |        228.99       |      2618.92
-20      |        220.86       |      3066.36
+| YearAnnual | Adopters (1000s) | Total Adopters (1000s)|
+|1       |       51.02        |      51.02              |
+|5       |       87.52        |      341.42             |
+|10      |       153.48       |      969.84             |
+|15      |       216.54       |      1938.19            |
+|18      |       228.99       |      2618.92            |
+|20      |       220.86       |      3066.36            |
