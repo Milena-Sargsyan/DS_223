@@ -1,5 +1,5 @@
-Innovation Diffusion Analysis: Pentax 17
-Marketing Analytics Project - Bass Diffusion Model
+# Innovation Diffusion Analysis: Pentax 17
+# Marketing Analytics Project - Bass Diffusion Model
 
 Project Overview: This project analyzes the potential market diffusion of the Pentax 17, a half-frame film camera released in 2024. By using historical data from the "Golden Age" of 35mm film cameras (1977–2007), I estimated the coefficients of innovation ($p$) and imitation ($q$) to forecast how this modern revival product will be adopted globally over the next 20 years.
 
