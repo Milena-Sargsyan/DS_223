@@ -1,7 +1,7 @@
 # Homework 1: Bass Diffusion Model - Pentax 17
 
 ## Project Overview
-Analysis of the potential market diffusion for the Pentax 17 (2024). This project uses historical CIPA shipment data to estimate adoption parameters.
+Analysis of the potential market diffusion for the Pentax 17 (2025). This project uses historical CIPA shipment data to estimate adoption parameters.
 
 ## Directory Structure
 - **docs/**: Contains the source reference `Shipment of Film Cameras.pdf` (CIPA).
