@@ -2,7 +2,7 @@
 
 ## 1. Innovation Selection
 **Selected Innovation:** Pentax 17 (Half-frame Film Camera)  
-**Reference:** [TIME’s Best Inventions of 2024](https://time.com/collection/best-inventions-2024/7094892/pentax-17/)
+**Reference:** [TIME’s Best Inventions of 2025](https://time.com/collections/best-inventions-2025/7318276/pentax-17/)
 
 ## 2. Look-alike Innovation and Justification
 I have selected **Historical 35mm Film Camera Sales** as the "look-alike" for the Pentax 17.
