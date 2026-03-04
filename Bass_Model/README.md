@@ -1,4 +1,6 @@
 # Homework 1: Bass Diffusion Model - Pentax 17
+Course: DS 223 | Marketing Analytics
+Student: Milena Sargsyan
 
 ## Project Overview
 Analysis of the potential market diffusion for the Pentax 17 (2025). This project uses historical CIPA shipment data to estimate adoption parameters.
