@@ -10,6 +10,10 @@ Number of trials: 20000
 
 Author: Milena Sargsyan
 Date: 2026
+
+Constants:
+    BANDIT_REWARDS (list[int]): True mean rewards for each bandit arm.
+    NUM_TRIALS (int): Total number of experiment steps.
 """
 
 
@@ -56,17 +60,34 @@ class Bandit(ABC):
         pass
 
     @abstractmethod
-    def update(self):
-        """Update the bandit's internal statistics after observing reward x."""
+    def update(self, x):
+        """Update the bandit's internal statistics after observing reward x.
+
+        :param x: Observed reward from the pulled arm.
+        :type x: float
+        """
         pass
 
     @abstractmethod
     def experiment(self):
-        """Run the full bandit experiment for NUM_TRIALS steps."""
+        """Run the full bandit experiment for NUM_TRIALS steps.
+
+        :returns: Tuple of (results, rewards, regrets) where results is a list
+                  of (bandit_index, reward) tuples, rewards is a list of per-trial
+                  rewards, and regrets is a list of per-trial regrets.
+        :rtype: tuple
+        """
         pass
 
     @abstractmethod
-    def report(self):
+    def report(self, results, algorithm):
+        """Save results to CSV, print cumulative reward and regret.
+
+        :param results: List of (bandit_index, reward) tuples from the experiment.
+        :type results: list[tuple]
+        :param algorithm: Name of the algorithm (used as a CSV column value).
+        :type algorithm: str
+        """
         # store data in csv
         # print average reward (use f strings to make it informative)
         # print average regret (use f strings to make it informative)
@@ -96,7 +117,7 @@ class Visualization():
             plt.title(f"{name} - Cumulative Reward (Linear Scale)")
             plt.xlabel("Trial")
             plt.ylabel("Cumulative Reward")
-            plt.savefig(f"{name}_linear.png")
+            plt.savefig(f"{name.replace(' ', '_')}_linear.png")
             plt.show()
 
             # Log scale
@@ -106,7 +127,7 @@ class Visualization():
             plt.title(f"{name} - Cumulative Reward (Log Scale)")
             plt.xlabel("Trial (log)")
             plt.ylabel("Cumulative Reward")
-            plt.savefig(f"{name}_log.png")
+            plt.savefig(f"{name.replace(' ', '_')}_log.png")
             plt.show()
 
     def plot2(self, rewards_eg, rewards_ts, regrets_eg, regrets_ts):
@@ -329,8 +350,7 @@ class ThompsonSampling(Bandit):
 
 def comparison():
     """Run both experiments and produce all visualizations and reports."""
-    # think of a way to compare the performances of the two algorithms VISUALLY and
-    # Remove old CSV if it exists
+    # Remove old CSV to avoid appending to stale results
     if os.path.exists("results.csv"):
         os.remove("results.csv")
 
@@ -350,12 +370,7 @@ def comparison():
     viz.plot2(rewards_eg, rewards_ts, regrets_eg, regrets_ts)
 
 
-if __name__=='__main__':
-   
-    logger.debug("debug message")
-    logger.info("info message")
-    logger.warning("warning message")
-    logger.error("error message")
-    logger.critical("critical message")
-
+if __name__ == '__main__':
+    logger.info("Starting A/B Testing experiment with Multi-Armed Bandits.")
     comparison()
+    logger.info("Experiment complete. Results saved to results.csv.")

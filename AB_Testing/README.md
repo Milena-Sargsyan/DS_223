@@ -50,8 +50,8 @@ Both algorithms successfully identify **Bandit 4** (true mean = 4) as the best a
 ![Epsilon-Greedy Log](Epsilon-Greedy_log.png)
 
 ### Thompson Sampling — Learning Process
-![Thompson Sampling Linear](Thompson Sampling_linear.png)
-![Thompson Sampling Log](Thompson Sampling_log.png)
+![Thompson Sampling Linear](Thompson_Sampling_linear.png)
+![Thompson Sampling Log](Thompson_Sampling_log.png)
 
 ### Comparison
 ![Cumulative Rewards Comparison](comparison_rewards.png)
