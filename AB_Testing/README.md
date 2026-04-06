@@ -93,3 +93,19 @@ This will generate the plots and `results.csv` automatically.
 - `numpy` — numerical computations
 - `matplotlib` — visualizations
 - `pandas` — data handling
+
+---
+
+## Bonus: Suggested Improvements
+
+**1. Separate the experiment logic from the Bandit class**  
+Currently, each bandit class runs the full experiment inside its own `experiment()` method.
+A cleaner approach would be to move the experiment loop into a standalone function like
+`run_experiment(BanditClass, n_trials)`. This way each class only handles what it's
+responsible for: pulling an arm and updating its estimate. It also makes it easier to
+swap algorithms without rewriting the loop each time.
+
+**2. Run multiple trials and average the results**  
+Right now the experiment runs once. Results can vary depending on random chance.
+Running the experiment 10 or 20 times and plotting the average cumulative reward/regret
+would give a more reliable comparison between the two algorithms.
