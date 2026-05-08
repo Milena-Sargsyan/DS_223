@@ -1,6 +1,7 @@
 # Homework 3 - Survival Analysis
 
 Course: DS 223 | Marketing Analytics
+
 Student: Milena Sargsyan
 
 ## Project Overview
@@ -18,9 +19,9 @@ Survival_Analysis/
 ├── img/
 │   └── generated plots and visualizations
 │
-├── survival_analysis.ipynb
+├── README.md
 ├── requirements.txt
-└── README.md
+└── survival_analysis.ipynb
 ```
 
 ## Objective
